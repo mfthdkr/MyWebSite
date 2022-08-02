@@ -1,5 +1,7 @@
 Notlar:
 
-N-katmanlı mimari, Repository Design Pattern ve .Net5 ile Kişisel Web Sitesi
+.Net5 ile dinamik Kişisel Web Sitesi
 
-Core Katmanı oluşturulmadı. Repository, Dal katmanında
+N-katmanlı mimari, Repository Design Pattern
+
+Core Katmanı oluşturulmadı. Repository, Dal katmanında.
