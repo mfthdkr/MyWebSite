@@ -19,17 +19,17 @@ namespace BusinessLayer.Concrete
         }
         public void Add(Portfolio entity)
         {
-            throw new NotImplementedException();
+            _portfolioDal.Insert(entity);
         }
 
         public void Delete(Portfolio entity)
         {
-            throw new NotImplementedException();
+            _portfolioDal.Delete(entity);
         }
 
         public void Update(Portfolio entity)
         {
-            throw new NotImplementedException();
+          _portfolioDal.Update(entity);
         }
 
         public List<Portfolio> GetList()
@@ -39,7 +39,7 @@ namespace BusinessLayer.Concrete
 
         public Portfolio GetById(int id)
         {
-            throw new NotImplementedException();
+            return _portfolioDal.GetById(id);
         }
     }
 }

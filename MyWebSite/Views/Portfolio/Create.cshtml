@@ -1,0 +1,44 @@
+﻿@model EntityLayer.Concrete.Portfolio
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Create</h1>
+
+@using(Html.BeginForm("Create","Portfolio",FormMethod.Post)){
+
+    <br />
+    <label>Proje Başlığı</label>
+    <br/>
+    @Html.TextBoxFor(p=>p.Name,new {@class= "form_control"})
+    @Html.ValidationMessageFor(p=>p.Name)
+    <br />
+    <label>Görsel 1</label>
+    @Html.TextBoxFor(p=>p.ImageUrl,new {@class= "form-control"})
+    @Html.ValidationMessageFor(p=>p.ImageUrl)
+
+    <br />
+    <label>Görsel 2 </label>
+    @Html.TextBoxFor(p=>p.ImageUrlView,new {@class= "form-control"})
+    @Html.ValidationMessageFor(p=>p.ImageUrlView)
+
+    <br />
+    <label>Proje Url </label>
+    @Html.TextBoxFor(p=>p.ProjectUrl,new {@class= "form-control"})
+    @Html.ValidationMessageFor(p=>p.ProjectUrl)
+
+    <br />
+    <label>Fiyat </label>
+    @Html.TextBoxFor(p=>p.Price,new {@class= "form-control"})
+    @Html.ValidationMessageFor(p=>p.Price)
+
+    <br />
+    <label>Tamanlanma Oranı </label>
+    @Html.TextBoxFor(p=>p.Value,new {@class= "form-control"})
+    @Html.ValidationMessageFor(p=>p.Value)
+
+    <br />
+    <br />
+    <button class="btn btn-success">Kaydet</button>
+}

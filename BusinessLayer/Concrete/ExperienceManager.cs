@@ -19,17 +19,17 @@ namespace BusinessLayer.Concrete
         }
         public void Add(Experience entity)
         {
-            throw new NotImplementedException();
+            _experienceDal.Insert(entity);
         }
 
         public void Delete(Experience entity)
         {
-            throw new NotImplementedException();
+            _experienceDal.Delete(entity);
         }
 
         public void Update(Experience entity)
         {
-            throw new NotImplementedException();
+            _experienceDal.Update(entity);
         }
 
         public List<Experience> GetList()
@@ -39,7 +39,7 @@ namespace BusinessLayer.Concrete
 
         public Experience GetById(int id)
         {
-            throw new NotImplementedException();
+            return _experienceDal.GetById(id);
         }
     }
 }
